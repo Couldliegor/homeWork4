@@ -7,6 +7,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1() {
         //exercise 1
@@ -51,7 +52,7 @@ public class Main {
     //exercise 4
         System.out.println("\n ");
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter you age");
+        System.out.println("Enter your age");
         int age = scan.nextInt();
         boolean youngMan = age > 2 && age <6;
         boolean schoolMan = age >= 7 && age < 18;
@@ -68,7 +69,22 @@ public class Main {
         } else{
             System.out.println("You're so young boy!)");
         }
-
     }
-
+    public static void task5(){
+        //exercise 5
+        System.out.println("\n ");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your age");
+        int age = scan.nextInt();
+        boolean tooYoung = age < 5;
+        boolean onlyWithAdult = age >= 5 && age < 14;
+        boolean oldEnough = age > 14;
+        if(tooYoung){
+            System.out.println("If child age is: " + age + ", than he can't ride");
+        } else if(onlyWithAdult){
+            System.out.println("If child age is: " + age + ", than he can ride only with adult");
+        } else if(oldEnough){
+            System.out.println("If child age is: " + age + ", than he can ride!");
+        }
+    }
 }
