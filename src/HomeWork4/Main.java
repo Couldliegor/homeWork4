@@ -9,6 +9,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         //exercise 1
@@ -110,6 +111,31 @@ public class Main {
                 int freePlaces = 102 - places;
                System.out.println("There are free " + freePlaces + " standing places!");
             }
+        }
+    }
+    public static void task7(){
+        //exercise 7
+        System.out.println("\n ");
+        System.out.println("Show me three numbers and i will return you the biggest one!");
+        Scanner number1 = new Scanner(System.in);
+        System.out.println("Enter your first number");
+        int one = number1.nextInt();
+
+        Scanner number2 = new Scanner(System.in);
+        System.out.println("Enter your second number");
+        int two = number2.nextInt();
+
+        Scanner number3 = new Scanner(System.in);
+        System.out.println("Enter your third number");
+        int three = number3.nextInt();
+        if(one > two && one > three){
+            System.out.println("Number " + one + "- is the biggest one!");
+        } else if ( two > one && two > three){
+            System.out.println("Number " + two + "- is the biggest one!");
+        }else if (three > one && three > two){
+            System.out.println("Number " + three + "- is the biggest one!");
+        }else if (one == two && one == three){
+            System.out.println("Wait, all numbers are equal to each other!!");
         }
     }
 }
