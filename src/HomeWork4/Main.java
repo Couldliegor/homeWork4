@@ -8,6 +8,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1() {
         //exercise 1
@@ -85,6 +86,30 @@ public class Main {
             System.out.println("If child age is: " + age + ", than he can ride only with adult");
         } else if(oldEnough){
             System.out.println("If child age is: " + age + ", than he can ride!");
+        }
+    }
+    public static void task6(){
+        //exercise 6
+        System.out.println("\n ");
+        System.out.println("Enter how much places has been taken");
+        Scanner scan = new Scanner(System.in);
+        int places = scan.nextInt();
+        if(places >= 102){
+            System.out.println("All free places has been taken, sorry.");
+        }else if(places < 102) {
+            boolean sittingPlaces = places < 60;
+            boolean standUpPlaces = places >= 60;
+            if(sittingPlaces){
+                int freePlaces = 60 - places;
+                if(freePlaces == 1){
+                    System.out.println("There is " + freePlaces + " free place for you!");
+                }
+                System.out.println("There are free " + freePlaces + " sitting places!");
+            }
+            if(standUpPlaces){
+                int freePlaces = 102 - places;
+               System.out.println("There are free " + freePlaces + " standing places!");
+            }
         }
     }
 }
