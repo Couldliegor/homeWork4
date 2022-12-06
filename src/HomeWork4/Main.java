@@ -78,7 +78,7 @@ public class Main {
         int age = scan.nextInt();
         boolean tooYoung = age < 5;
         boolean onlyWithAdult = age >= 5 && age < 14;
-        boolean oldEnough = age > 14;
+        boolean oldEnough = age >= 14;
         if(tooYoung){
             System.out.println("If child age is: " + age + ", than he can't ride");
         } else if(onlyWithAdult){
