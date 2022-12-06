@@ -6,6 +6,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
     public static void task1() {
         //exercise 1
@@ -27,7 +28,7 @@ public class Main {
         int temperature = sc1.nextInt();
          if (temperature < 5 ){
                 System.out.println("It's " + temperature + " celcium outside.");
-                System.out.println("The weather cold outside, you need to wear hat!");
+                System.out.println("The weather is cold outside, you need to wear hat!");
          } else {
              System.out.println("It's " + temperature + " celcium outside");
              System.out.println("The weather is warm today, so there is no need to wear hat !");
@@ -45,6 +46,29 @@ public class Main {
             }else{
                 System.out.println("If your speed is " + yourSpeed + ", than you dont need to worry!)");
             }
+    }
+    public static void task4(){
+    //exercise 4
+        System.out.println("\n ");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter you age");
+        int age = scan.nextInt();
+        boolean youngMan = age > 2 && age <6;
+        boolean schoolMan = age >= 7 && age < 18;
+        boolean universityMan = age >= 18 && age < 24;
+        boolean adult = age >=  24;
+        if(youngMan){
+            System.out.println("If your age equals " + age + ", than you need to go to kindergarten ");
+            }else if(schoolMan){
+                System.out.println("If your age equals " + age + ", than you need to go to school ");
+            }else if(universityMan){
+            System.out.println("If your age equals " + age + ", than you need to go to university ");
+        }else if(adult){
+            System.out.println("If your age equals " + age + ", than you need to go to work! ");
+        } else{
+            System.out.println("You're so young boy!)");
+        }
 
     }
+
 }
